@@ -3,7 +3,7 @@
     <h2>Создание поста</h2>
     <input v-model="post.title" type="text" placeholder="Название">
     <input v-model="post.body" type="text" placeholder="Описание">
-    <button @click="createPost">Добавить</button>
+    <my-button class="btn" @click="createPost">Добавить</my-button>
   </form>
 </template>
 
