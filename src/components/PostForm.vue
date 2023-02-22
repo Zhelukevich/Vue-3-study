@@ -1,9 +1,12 @@
 <template >
   <form @submit.prevent>
     <h2>Создание поста</h2>
-    <input v-model="post.title" type="text" placeholder="Название">
-    <input v-model="post.body" type="text" placeholder="Описание">
-    <my-button class="btn" @click="createPost">Добавить</my-button>
+
+    <my-input v-model="post.title" type="text" placeholder="Название" />
+    <my-input v-model="post.body" type="text" placeholder="Описание" />
+    <my-button class="btn" @click="createPost">
+      Добавить
+    </my-button>
   </form>
 </template>
 
@@ -30,4 +33,8 @@ export default {
 }
 </script>
 
-<style ></style>
+<style scoped>
+.btn {
+  margin-top: 10px;
+}
+</style>
